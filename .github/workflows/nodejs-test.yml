@@ -17,9 +17,7 @@ jobs:
           cache-dependency-path: package-lock.json  # assuming package-lock.json is in repo root
 
       - name: Install dependencies
-        working-directory: app
         run: npm ci   # removed working-directory because app is in root or you can set accordingly
 
       - name: Run tests
-        working-directory: app
         run: npm test  # same here, running from root
