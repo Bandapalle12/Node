@@ -14,10 +14,10 @@ jobs:
         with:
           node-version: 18
           cache: npm
-          cache-dependency-path: package-lock.json  # assuming package-lock.json is in repo root
+          cache-dependency-path: package-lock.json 
 
       - name: Install dependencies
-        run: npm ci   # removed working-directory because app is in root or you can set accordingly
+        run: npm ci   
 
       - name: Run tests
-        run: npm test  # same here, running from root
+        run: npm test  
